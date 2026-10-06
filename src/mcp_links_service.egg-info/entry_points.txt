@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-links-service = mcp_links_service.server:main
