@@ -1,0 +1,14 @@
+{
+    "product_name": "Mcp Links Service MCP",
+    "install_dir": "%LOCALAPPDATA%\\Mcp Links Service MCP",
+    "operator_exe": "mcp-links-service-native.exe",
+    "backend_process_names": ["mcp-links-service-native", "mcp-links-service-backend"],
+    "backend_port": 10700,
+    "health_path": "/api/v1/health",
+    "diagnostics_path": "/api/v1/diagnostics",
+    "feature_smoke_path": "/api/v1/system/info",
+    "window_title_re": "Mcp Links Service MCP",
+    "nsis_glob": "native/target/release/bundle/nsis/Mcp Links Service MCP_*_x64-setup.exe",
+    "bridge_ok_text": "REST bridge reachable",
+    "uninstall_registry_filter": "*Mcp Links Service MCP*"
+}

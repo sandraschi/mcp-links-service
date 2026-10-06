@@ -1,0 +1,35 @@
+[project]
+name = "mcp-links-service"
+version = "0.1.0"
+description = "Centralized Webapp and Container Links Service"
+authors = [
+    { name = "Sandra Schipal", email = "sandraschipal@gmail.com" }
+]
+dependencies = [
+    
+    "ruff>=0.16.0,<0.17","mcp[cli]>=1.2.1",
+    "fastmcp>=3.4.4,<4",
+    "psutil>=6.0.0"
+]
+
+[project.scripts]
+mcp-links-service = "mcp_links_service.server:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+
+# --- [tool.ruff] fleet block (mcp_fleet_lint_apply) ---
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "RUF"]
+ignore = ["S104", "S310", "S311", "S314", "S608", "S604", "E402", "B008", "B904", "RUF006", "N806", "ANN001", "BLE001", "PLW1510", "S102", "S108", "S202", "SIM115", "SIM117", "E501", "F811", "RUF012", "B027", "B007", "RUF059", "E501"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
