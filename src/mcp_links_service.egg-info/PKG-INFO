@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: mcp-links-service
+Version: 0.1.0
+Summary: Centralized Webapp and Container Links Service
+Author-email: Sandra Schipal <sandraschipal@gmail.com>
+License-File: LICENSE
+Requires-Dist: ruff<0.17,>=0.16.0
+Requires-Dist: mcp[cli]>=1.2.1
+Requires-Dist: fastmcp<4,>=3.4.4
+Requires-Dist: psutil>=6.0.0
+Dynamic: license-file
