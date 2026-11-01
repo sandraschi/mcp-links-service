@@ -4,3 +4,6 @@ _dashboard/
 # on every pack. Never hand-edit, never commit.
 mcpb/src/
 
+
+# added by wip-sweep v1 2026-11-01: generated dirs
+__pycache__/
